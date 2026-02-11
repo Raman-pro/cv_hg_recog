@@ -1,0 +1,30 @@
+# Configuration for Drone Project
+
+import cv2
+import os
+
+# Camera
+CAMERA_INDEX = 0
+
+# MediaPipe
+MP_MODEL_PATH = 'hand_landmarker.task'
+NUM_HANDS = 2
+MIN_HAND_DETECTION_CONFIDENCE = 0.5
+MIN_HAND_PRESENCE_CONFIDENCE = 0.5
+MIN_TRACKING_CONFIDENCE = 0.5
+
+# Model
+RF_MODEL_PATH = 'drone_rf_model.pkl'
+DATASET_PATH = 'drone_dataset.csv'
+
+# Visualization
+WINDOW_WIDTH = 800
+WINDOW_HEIGHT = 600
+TOP_VIEW_SIZE = 800
+SIDE_VIEW_WIDTH = 200
+SIDE_VIEW_HEIGHT = 400
+
+# Control
+PROBABILITY_THRESHOLD = 0.6
+CONTROL_ZONE_RADIUS_LARGE = 290
+CONTROL_ZONE_RADIUS_SMALL = 40
